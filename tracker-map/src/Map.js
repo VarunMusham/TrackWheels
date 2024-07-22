@@ -37,7 +37,7 @@ const Map = () => {
   }, []);
 
   return (
-    <MapContainer center={[17.362001, 78.554134]} zoom={55} style={{ height: "100vh", width: "100%" }}>
+    <MapContainer center={[28.529111, 77.575276]} zoom={15} style={{ height: "100vh", width: "100%" }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
