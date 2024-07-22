@@ -1,0 +1,55 @@
+import React, { useEffect, useState } from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = 'https://wlrpijvjqwjkwabslcwt.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndscnBpanZqcXdqa3dhYnNsY3d0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTYxMTE3MzIsImV4cCI6MjAzMTY4NzczMn0.AvnrtLse_w_BV1mhOoKnLGKIHsFazBidXnYhEeuxKOs';
+
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+// Define the bus icon
+const busIcon = new L.Icon({
+  iconUrl: '/images/bus.png', // Path to your bus image
+  iconSize: [40, 40], // Size of the icon
+  iconAnchor: [20, 40], // Point of the icon which will correspond to marker's location
+  popupAnchor: [0, -40] // Point from which the popup should open relative to the iconAnchor
+});
+
+const Map = () => {
+  const [locations, setLocations] = useState([]);
+
+  useEffect(() => {
+    const fetchLocations = async () => {
+      const { data, error } = await supabase
+        .from('GPS')
+        .select('*') 
+        .order('updated_at', { ascending: false });
+      if (error) console.error('Error fetching data:', error);
+      else setLocations(data);
+    };
+
+    fetchLocations();
+    const interval = setInterval(fetchLocations, 1000); // Fetch every 1 second
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, []);
+
+  return (
+    <MapContainer center={[17.362001, 78.554134]} zoom={55} style={{ height: "100vh", width: "100%" }}>
+      <TileLayer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      {locations.map(loc => (
+        <Marker key={loc.id} position={[loc.LAT, loc.LONG]} icon={busIcon}>
+          <Popup>
+            Shuttle ID: {loc.id} <br /> Timestamp: {new Date(loc.updated_at).toLocaleString()}
+          </Popup>
+        </Marker>
+      ))}
+    </MapContainer>
+  );
+};
+
+export default Map;
