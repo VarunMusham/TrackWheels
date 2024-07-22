@@ -1,5 +1,5 @@
 <h1>TrackWheels</h1>
-<img src="images/map.png" alt="TrackWheels">
+<img src="images/map1.png" alt="TrackWheels">
 
 <h2>Overview</h2>
 <p>TrackWheels is an ESP-based vehicle tracking system designed to monitor and display the real-time location of vehicles. This project consists of two main components: the hardware setup and the software for map visualization.</p>
