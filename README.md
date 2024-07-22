@@ -1,4 +1,8 @@
-<h1>TrackWheels</h1>
+<h1 align="center">TrackWheels</h1><p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=arduino,cpp,javascript,nodejs,react,bash,git,vercel,supabase" />
+  </a>
+</p>
 <img src="images/map1.png" alt="TrackWheels">
 
 <h2>Overview</h2>
