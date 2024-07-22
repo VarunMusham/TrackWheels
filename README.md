@@ -22,8 +22,10 @@
 <h2>Installation and Setup</h2>
 
 <h3>Hardware</h3>
+<div align="center">
+  <img src="images/circuit.jpeg" alt="Circuit" width="500" height="500">
+</div>
 
-<img src="images/circuit.jpeg" alt="TrackWheels" width="500" height="500">
 <ol>
     <li><strong>Connect the ESP8266 to the Neo6M GPS Module</strong>:
         <ul>
