@@ -1,5 +1,5 @@
 <h1>TrackWheels</h1>
-<!-- <img src="link_to_your_image" alt="TrackWheels"> -->
+<img src="images/map.png" alt="TrackWheels">
 
 <h2>Overview</h2>
 <p>TrackWheels is an ESP-based vehicle tracking system designed to monitor and display the real-time location of vehicles. This project consists of two main components: the hardware setup and the software for map visualization.</p>
@@ -18,6 +18,8 @@
 <h2>Installation and Setup</h2>
 
 <h3>Hardware</h3>
+
+<img src="images/circuit.jpeg" alt="TrackWheels" width="500" height="500">
 <ol>
     <li><strong>Connect the ESP8266 to the Neo6M GPS Module</strong>:
         <ul>
