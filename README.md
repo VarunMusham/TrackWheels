@@ -23,8 +23,7 @@
         <ul>
             <li>VCC of Neo6M to 3.3V of ESP8266</li>
             <li>GND of Neo6M to GND of ESP8266</li>
-            <li>RX of Neo6M to TX of ESP8266</li>
-            <li>TX of Neo6M to RX of ESP8266</li>
+            <li>TX of Neo6M to D1 of ESP8266</li>
         </ul>
     </li>
     <li><strong>Upload the firmware</strong>:
@@ -80,8 +79,5 @@ cd TrackWheels
 <h2>Contributing</h2>
 <p>Contributions are welcome! Please fork the repository and create a pull request with your changes.</p>
 
-<h2>License</h2>
-<p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
-
-<h2>Contact</h2>
-<p>For any questions or suggestions, please open an issue or reach out to <a href="mailto:your_email@example.com">your_email@example.com</a>.</p>
+<h2>Deployment</h2>
+<p>You can deploy the Map website using services like Vercel</p>
