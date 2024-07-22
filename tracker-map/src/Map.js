@@ -4,8 +4,8 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = 'https://wlrpijvjqwjkwabslcwt.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndscnBpanZqcXdqa3dhYnNsY3d0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTYxMTE3MzIsImV4cCI6MjAzMTY4NzczMn0.AvnrtLse_w_BV1mhOoKnLGKIHsFazBidXnYhEeuxKOs';
+const supabaseUrl = 'SUPABASE_URL';
+const supabaseKey = 'SUPABASE_API_KEY';
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
