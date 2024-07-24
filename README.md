@@ -82,6 +82,7 @@ cd TrackWheels
     <li>Turn on the hardware setup.</li>
     <li>Ensure the ESP8266 is connected to a Wi-Fi network.</li>
     <li>Start the React application to view the real-time tracking on the map.</li>
+    <li>You can extract other values from Neo 6M module. (refer datasheet).</li>
 </ul>
 
 <h2>Contributing</h2>
