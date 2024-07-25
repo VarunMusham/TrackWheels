@@ -44,7 +44,7 @@ const Map = () => {
       {locations.map(loc => (
         <Marker key={loc.id} position={[loc.LAT, loc.LONG]} icon={busIcon}>
           <Popup>
-            Shuttle ID: {loc.id} <br /> Timestamp: {new Date(loc.updated_at).toLocaleString()}
+            Shuttle ID: {loc.id} <br /> Timestamp: {new Date(loc.updated_at).toLocaleString()}    // Choose what to display on pop-up
           </Popup>
         </Marker>
       ))}
