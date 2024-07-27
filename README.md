@@ -49,7 +49,7 @@
             updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
             );
           </code></pre>
-            <li>Note down the <code>supabaseUrl</code> and <code>supabaseKey</code>.</li>
+            <li>Note down the <code>supabaseUrl</code> and <code>supabaseAPIKey</code>.</li>
         </ul>
     </li>
 </ol>
