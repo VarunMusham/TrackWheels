@@ -89,4 +89,4 @@ cd TrackWheels
 <p>Contributions are welcome! Please fork the repository and create a pull request with your changes.</p>
 
 <h2>Deployment</h2>
-<p>You can deploy the Map website using services like Vercel, Netlify and many more</p>
+<p>You can deploy the Map website using services like Vercel, Netlify and many more. Make sure to select correct framework while deploying</p>
