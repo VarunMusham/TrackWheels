@@ -15,7 +15,7 @@
     <li><strong>Neo6M GPS Module</strong>: A GPS module used to retrieve the geographical coordinates of the vehicle.</li>
 </ul>
 <p>The ESP8266 board reads the GPS data from the Neo6M module and sends the vehicle coordinates to a Supabase cloud database.</p>
-
+<!-- Node JS Needed-->
 <h2>Software</h2>
 <p>The software component is built using ReactJS and is responsible for displaying a map that tracks the real-time location of the vehicle. It collects the coordinates stored in the Supabase database and visualizes them on the map.</p>
 
