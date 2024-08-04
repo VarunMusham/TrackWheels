@@ -5,7 +5,7 @@
 #include <ESP8266HTTPClient.h>
 #include <TimeLib.h>
 
-const int RXPin = 4, TXPin = 5;
+const int RXPin = 4, TXPin = 5;    // Change acordingly
 const uint32_t GPSBaud = 9600;
 SoftwareSerial gps_module(RXPin, TXPin);
 
